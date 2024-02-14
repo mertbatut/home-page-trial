@@ -197,19 +197,33 @@ body {
 
 .navbar-nav{
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   gap: 20px;
 
 }
-.erdemDiv{
+
+
+
+/* ----------CARDGRİD--------- */
+
+.gallery{
   display: flex;
+  gap:5px;
 }
-.erdemDiv>*{
-  flex: 1;
-  background-color:aqua;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid red;
+.card{
+  position: relative;
+  left: 0px;
+  width: 80px;
+  border-radius: 4px;
+  padding: 8px;
+  height: 360px;
+  background-color: white;
+  transition: 0.4s ease-in-out;
+  flex: 1px;
+
+}
+.card:hover{
+  flex: 3;
+  font-weight: bold;
+  cursor: pointer;
 }
