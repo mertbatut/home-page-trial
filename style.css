@@ -4,6 +4,38 @@
   box-sizing: border-box;
 }
 
+.navmenu{
+  z-index: 5;
+  justify-content: center;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 100;
+  }
+  .navmenu ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .navmenu ul li {
+    padding: 0 10px;
+     }
+  
+  .navmenu ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .navmenu ul li:hover a {
+    color: #fff;
+  }
+
+  .navimg{
+    z-index: 1;
+    
+  }
+
 body {
   height: 100vh;
 }
@@ -193,12 +225,15 @@ body {
 }
 .navbar{
   display: flex;
+  z-index: 5;
+  background-color: transparent;
 }
 
 .navbar-nav{
   display: flex;
   justify-content: end;
   gap: 20px;
+  
 
 }
 
@@ -227,3 +262,4 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
